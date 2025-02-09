@@ -1,0 +1,17 @@
+<ion-content>
+  <ion-content fixed class="r-content">
+    <ion-img class="shop-logo" src="../../../assets/icon/Residuos.png" alt="Recicanje Tienda"></ion-img>
+    <div *ngFor="let residuo of residuos" style="padding: 1rem 1.5rem 0;">
+      <div class="c-card">
+        <h2 class="c-content res-name">{{ residuo.ResName.toUpperCase() }}</h2>
+        <p class="c-content res-type">TIPO: {{ residuo.ResType.toUpperCase() }}</p>
+        <ion-img class="c-content" [src]="residuo.ImageUrl" alt="Imagen de residuo" *ngIf="residuo.ImageUrl" />
+      </div>
+    </div>
+    <div>
+      <ion-button class="volver" (click)="goHome()">
+        VOLVER
+      </ion-button>
+    </div>
+  </ion-content>
+</ion-content>

@@ -1,0 +1,43 @@
+ion-content{
+  --background: #f5f5dc
+}
+
+ion-header{
+  --background: #f5f5dc
+}
+
+.nobg-btn{
+  margin: 20px 0 0 20px;
+  --background: rgba(0, 0, 0, 0);
+  --box-shadow: none;
+  width: 12rem;
+}
+
+.LabelAvatar{
+  padding-left: 10%;
+  color: #07AB07;
+}
+
+.LabelIcons{
+  display: block;  
+  margin-bottom: 10px;
+}
+
+.app-home-btn, ion-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+#cam-btn{
+  width: 7rem;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, 0); 
+}
+.custom_icon{
+  width: 100px;   
+  height: 100px;
+}
+  

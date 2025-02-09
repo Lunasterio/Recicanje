@@ -1,0 +1,7 @@
+{
+  "name": "Recicanje",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

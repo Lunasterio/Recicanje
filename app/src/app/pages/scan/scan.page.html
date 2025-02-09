@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+
+  <div class="center">
+    <ion-img  [src]="selectedImage" alt=""></ion-img>
+  </div>
+  <div class="Fondo">
+    <div class="center">
+      <ion-label>TIPO DE RESIDUO</ion-label>
+        <ion-item>
+          <ion-select justify="space-between" placeholder="Tipo" interface="popover" class="ListTipo" mode="md" [(ngModel)]="ResType">
+            <ion-select-option *ngFor="let Restype of ResTypes" [value]="Restype">{{ Restype }}</ion-select-option>
+          </ion-select>          
+        </ion-item>
+      <ion-label>¿QUE RESIDUO ES?</ion-label>
+      <ion-input [(ngModel)]="ResName"></ion-input>
+    </div>
+  </div>  
+  <div class="center">
+    <app-image-uploader (imageSelected)="onImageSelected($event)"></app-image-uploader>
+  </div>
+  <div class="center" >
+    <ion-button (click)="sendData()">
+      GUARDAR
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="center">
+    <ion-button class="Volver" (click)="goHome()">
+      VOLVER
+    </ion-button>
+  </div>
+</ion-footer>

@@ -1,0 +1,21 @@
+<ion-header [translucent]="true" >
+  <ion-button (click)="navToProfile()" class="nobg-btn" fill="solid">
+        <ion-avatar>
+          <img alt="User" src="../../../assets/icon/Recicanje_User.png"/>
+        </ion-avatar>
+        <ion-label class="LabelAvatar">{{ displayName  }}</ion-label> 
+  </ion-button>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="app-home-btn">
+    <app-home-btn 
+    *ngFor="let homeBtn of homeBtns" [homeBtn]="homeBtn">
+    </app-home-btn>
+  </div>
+  <ion-button (click)="navToScan()" class="nobg-btn" id="cam-btn" slot="fixed" >
+    <ion-img 
+    src="../../../assets/icon/RecicanjeCam.png">
+  </ion-img>
+  </ion-button>
+</ion-content>

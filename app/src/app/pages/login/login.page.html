@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+      <!-- Logo Recicanje --> 
+        <div class="center">
+        <ion-img  src="../../../assets/icon/RecicanjeName.png" alt="Logo Recicanje"></ion-img>
+        </div>
+      <!-- Input Email -->
+      <div class="center">
+        <ion-input [(ngModel)]="email" placeholder="EMAIL" type="email"></ion-input>
+      </div>
+      <!-- Input Contraseña -->
+      <div class="center">
+        <ion-input [(ngModel)]="pass" placeholder="CONTRASEÑA" type="password"></ion-input>
+      </div>
+      <!-- Boton Login -->
+      <div class="center">
+        <ion-button (click)="VaLogin()">
+          INICIAR SESION
+        </ion-button>
+      </div>
+      <!-- Boton Register -->
+      <div class="center">
+        <ion-button (click)="VaRegister()">
+          REGISTRARSE
+        </ion-button>
+      </div>
+</ion-content>

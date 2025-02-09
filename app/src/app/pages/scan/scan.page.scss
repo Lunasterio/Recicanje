@@ -1,0 +1,93 @@
+ion-content{
+    --background: #f5f5dc
+}
+
+ion-img{
+    height: 15rem;
+    padding-top: 5rem;
+}
+
+.Fondo{
+    margin-top: 4rem;
+    padding-top: 2rem;
+    background-color:#E4C99D;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ion-input{
+    --background: #ffffff;
+    --border-radius: 40px;
+    text-align: center;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 40px;
+    margin-bottom: 3rem;
+    width: 70%;
+    --placeholder-color: #a4a3a3;
+    --color:#a4a3a3;
+}
+
+ion-button{
+    --border-radius: 40px;
+    width: 70%;
+    margin-top: 2rem;
+}
+app-image-uploader{
+        --border-radius: 40px;
+        width: 70%;
+        margin-top: 2rem;
+    
+}
+
+ion-footer{
+    margin-bottom: 3rem;
+}
+
+.Sesion{
+    --color:#07AB07 ;
+    --background:#004400;
+}
+
+ion-label{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.ListTipo{
+    --background:#ffffff;
+    --placeholder-color: #a4a3a3;
+    --background-color: #a4a3a3;
+    --ripple-color:#ffffff;
+    --highlight-color-valid:#a4a3a3;
+    --highlight-color-invalid:#a4a3a3;
+    --highlight-color-focused:#a4a3a3;
+}
+
+ion-select::part(text) {
+    color: #a4a3a3;;
+  }
+
+ion-item{
+    --background:#ffffff;
+    width: 70%;
+    --border-radius: 40px;
+}
+
+.Volver{
+    --color:#07AB07 ;
+    --background:#004400;
+}
+
+*{
+    --ion-font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+

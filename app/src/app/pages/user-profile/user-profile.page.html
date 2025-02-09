@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+
+  <div class="center">
+    <ion-img  src="../../../assets/icon/Recicanje_User.png" alt="UsuarioLogo"></ion-img>
+  </div>
+
+  <div class="Fondo">
+    <div class="center">
+      <ion-input [(ngModel)]="userDisplayName" placeholder="{{ userDisplayName }}"></ion-input>
+    </div>
+  </div>  
+
+  <div class="center">
+    <ion-button class="Actualizar" (click)="ActName()" > <!-- Falta implementar-->
+      ACTUALIZAR
+    </ion-button>
+    <ion-button (click)="goHome()" > <!-- Falta implementar-->
+      VOLVER
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="center">
+    <ion-button class="Sesion" (click)="Cierre()">
+      CERRAR SESION
+    </ion-button>
+  </div>
+</ion-footer>

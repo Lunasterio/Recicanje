@@ -1,0 +1,33 @@
+ion-content{
+    --background: #f5f5dc;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-img{
+    padding-top: 4rem;
+    width: 300px;
+}
+
+ion-input{
+    --background: #ffffff;
+    --border-radius: 40px;
+    text-align: center;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 40px;
+    margin-bottom: 20px;
+    width: 70%;
+    --placeholder-color: #a4a3a3;
+    --color:#a4a3a3;
+}
+
+ion-button{
+    --border-radius: 40px;
+    width: 70%;
+    margin-top: 20px;
+}
+
